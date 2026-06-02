@@ -116,3 +116,52 @@
 [2026-06-02 01:02:19] Encerrando a aplicacao...
 [2026-06-02 01:02:19] Parando o monitoramento...
 [2026-06-02 01:02:19] Aplicacao encerrada completamente.
+[2026-06-02 01:13:19] Inicializando o sistema HITEST
+[2026-06-02 01:13:19] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-02 01:13:20] Inicializando o sistema HITEST
+[2026-06-02 01:13:20] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-02 01:13:28] Sistema de monitoramento iniciado
+[2026-06-02 01:13:28] Sistema de monitoramento iniciado
+[2026-06-02 01:13:30] Dispositivo 192.168.50.101 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.101 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.102 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.102 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.103 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.104 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.105 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.106 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.100 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.103 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.107 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.104 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.105 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.106 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.100 offline
+[2026-06-02 01:13:30] Dispositivo 192.168.50.107 offline
+[2026-06-02 01:13:32] Inicializando o sistema HITEST
+[2026-06-02 01:13:32] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-02 01:13:35] Encerrando a aplicacao...
+[2026-06-02 01:13:35] Parando o monitoramento...
+[2026-06-02 01:13:35] Aplicacao encerrada completamente.
+[2026-06-02 01:13:36] Sistema de monitoramento iniciado
+[2026-06-02 01:13:38] Dispositivo 192.168.50.101 offline
+[2026-06-02 01:13:38] Dispositivo 192.168.50.102 offline
+[2026-06-02 01:13:38] Dispositivo 192.168.50.103 offline
+[2026-06-02 01:13:38] Dispositivo 192.168.50.104 offline
+[2026-06-02 01:13:38] Dispositivo 192.168.50.105 offline
+[2026-06-02 01:13:38] Dispositivo 192.168.50.106 offline
+[2026-06-02 01:13:38] Dispositivo 192.168.50.100 offline
+[2026-06-02 01:13:38] Dispositivo 192.168.50.107 offline
+[2026-06-02 01:13:42] Comando enviado para 192.168.50.100 (ID: 321)
+[2026-06-02 01:13:44] Erro de rede ao enviar comando para 192.168.50.100: HTTPConnectionPool(host='192.168.50.100', port=80): Max retries exceeded with url: /lb (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.50.100', port=80) at 0x1a7e67b0fb0>, 'Connection to 192.168.50.100 timed out. (connect timeout=2.0)'))
+[2026-06-02 01:13:54] Comando enviado para 192.168.50.106 (ID: 987)
+[2026-06-02 01:13:56] Erro de rede ao enviar comando para 192.168.50.106: HTTPConnectionPool(host='192.168.50.106', port=80): Max retries exceeded with url: /lb (Caused by ConnectTimeoutError(<HTTPConnection(host='192.168.50.106', port=80) at 0x1a7e67b1040>, 'Connection to 192.168.50.106 timed out. (connect timeout=2.0)'))
+[2026-06-02 01:14:27] Recarregando configuracao de dispositivos...
+[2026-06-02 01:14:27] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-02 01:14:27] Configuracao de dispositivos recarregada e atualizada com sucesso.
+[2026-06-02 01:14:42] Encerrando a aplicacao...
+[2026-06-02 01:14:42] Parando o monitoramento...
+[2026-06-02 01:14:42] Aplicacao encerrada completamente.
+[2026-06-02 01:14:48] Encerrando a aplicacao...
+[2026-06-02 01:14:48] Parando o monitoramento...
+[2026-06-02 01:14:48] Aplicacao encerrada completamente.
