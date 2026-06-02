@@ -165,3 +165,17 @@
 [2026-06-02 01:14:48] Encerrando a aplicacao...
 [2026-06-02 01:14:48] Parando o monitoramento...
 [2026-06-02 01:14:48] Aplicacao encerrada completamente.
+[2026-06-02 01:20:57] Inicializando o sistema HITEST
+[2026-06-02 01:20:57] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-02 01:21:00] Sistema de monitoramento iniciado
+[2026-06-02 01:21:02] Dispositivo 192.168.50.101 offline
+[2026-06-02 01:21:02] Dispositivo 192.168.50.102 offline
+[2026-06-02 01:21:02] Dispositivo 192.168.50.103 offline
+[2026-06-02 01:21:02] Dispositivo 192.168.50.104 offline
+[2026-06-02 01:21:02] Dispositivo 192.168.50.105 offline
+[2026-06-02 01:21:02] Dispositivo 192.168.50.106 offline
+[2026-06-02 01:21:02] Dispositivo 192.168.50.100 offline
+[2026-06-02 01:21:02] Dispositivo 192.168.50.107 offline
+[2026-06-02 01:21:07] Encerrando a aplicacao...
+[2026-06-02 01:21:07] Parando o monitoramento...
+[2026-06-02 01:21:07] Aplicacao encerrada completamente.
