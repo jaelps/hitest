@@ -1,4 +1,5 @@
-import requests
+import subprocess
+import shutil
 from typing import Tuple
 from services.logger import logger
 
@@ -19,17 +20,26 @@ class NetworkService:
         """
         url = f"http://{ip}/lb"
         try:
-            # Using requests.get as strictly mandated
-            response = requests.get(url, timeout=timeout)
-            # A successful status code (2xx/3xx) means it is online
-            return response.status_code < 400
-        except requests.RequestException:
+            # Check if curl is available
+            if shutil.which('curl') is None:
+                logger.warning("curl não encontrado no PATH. Usando fallback.")
+                return False
+            
+            # Using curl command to send test request
+            cmd = f'curl -s -m {int(timeout)} "{url}"'
+            result = subprocess.run(cmd, shell=True, capture_output=True, timeout=timeout+1)
+            # A successful exit code (0) means it is online
+            return result.returncode == 0
+        except subprocess.TimeoutExpired:
+            return False
+        except Exception as e:
+            logger.error(f"Erro ao verificar dispositivo {ip}: {str(e)}")
             return False
 
     @staticmethod
     def send_command(device_id: str, ip: str, timeout: float = 2.0) -> Tuple[bool, str]:
         """
-        Sends the control command (HTTP GET to /lb) to the device.
+        Sends the control command (curl to /lb) to the device.
         
         Args:
             device_id: ID of the device.
@@ -42,15 +52,30 @@ class NetworkService:
         url = f"http://{ip}/lb"
         logger.info(f"Comando enviado para {ip} (ID: {device_id})")
         try:
-            response = requests.get(url, timeout=timeout)
-            if response.status_code < 400:
-                msg = f"Sucesso: {response.status_code}"
-                return True, msg
-            else:
-                msg = f"Erro HTTP {response.status_code}"
+            # Check if curl is available
+            if shutil.which('curl') is None:
+                msg = "curl não encontrado no sistema"
                 logger.error(f"Erro ao enviar comando para {ip}: {msg}")
                 return False, msg
-        except requests.RequestException as e:
-            msg = str(e)
+            
+            cmd = f'curl -s -m {int(timeout)} "{url}"'
+            result = subprocess.run(cmd, shell=True, capture_output=True, timeout=timeout+1, text=True)
+            if result.returncode == 0:
+                msg = f"Sucesso: {result.stdout.strip()}"
+                return True, msg
+            else:
+                try:
+                    error_msg = result.stderr.strip()
+                except (UnicodeDecodeError, AttributeError):
+                    error_msg = "Erro ao decodificar resposta"
+                msg = f"Erro: {error_msg}"
+                logger.error(f"Erro ao enviar comando para {ip}: {msg}")
+                return False, msg
+        except subprocess.TimeoutExpired as e:
+            msg = f"Timeout: {str(e)}"
             logger.error(f"Erro de rede ao enviar comando para {ip}: {msg}")
+            return False, msg
+        except Exception as e:
+            msg = str(e)
+            logger.error(f"Erro ao enviar comando para {ip}: {msg}")
             return False, msg

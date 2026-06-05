@@ -3,7 +3,7 @@ import logging
 import threading
 import customtkinter as ctk
 from datetime import datetime
-from typing import Dict, Optional
+from typing import Dict, Optional, Callable
 import ui.styles as styles
 from ui.widgets import MetricCard, DeviceRow
 from services.network import NetworkService
@@ -14,7 +14,7 @@ class HitestMainWindow(ctk.CTk):
     Main dashboard window for the Hitest system.
     Provides industrial-themed visualization and thread-safe control interface.
     """
-    def __init__(self, devices: Dict[str, str], on_refresh_click: Optional[callable] = None):
+    def __init__(self, devices: Dict[str, str], on_refresh_click: Optional[Callable[[], None]] = None):
         super().__init__()
         
         self.devices = devices
@@ -260,11 +260,13 @@ class HitestMainWindow(ctk.CTk):
 
         # Retrieve global handler format to keep consistency
         from services.logger import CustomFormatter
-        gui_handler = GuiLogHandler(self._append_log_message)
-        gui_handler.setFormatter(CustomFormatter())
+        hitest_logger = logging.getLogger("Hitest")
         
-        # Add handler to base logger
-        logging.getLogger("Hitest").addHandler(gui_handler)
+        # Prevent duplicate handlers
+        if not any(isinstance(h, GuiLogHandler) for h in hitest_logger.handlers):
+            gui_handler = GuiLogHandler(self._append_log_message)
+            gui_handler.setFormatter(CustomFormatter())
+            hitest_logger.addHandler(gui_handler)
 
     def _append_log_message(self, message: str):
         """Append log message thread-safely."""
@@ -291,6 +293,8 @@ class HitestMainWindow(ctk.CTk):
         """Updates the status in the UI row."""
         if device_id in self.device_rows:
             self.device_rows[device_id].update_status(is_online)
+        else:
+            logger.warning(f"Dispositivo {device_id} não encontrado na interface UI")
 
     def _safe_update_metrics_ui(self, online_cnt: int, offline_cnt: int, timestamp: str):
         """Updates metrics panel widgets."""

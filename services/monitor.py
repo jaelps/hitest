@@ -69,7 +69,7 @@ class DeviceMonitor:
             # We don't join blockingly inside UI, but we log the exit
             logger.info("Parando o monitoramento...")
 
-    def _check_single_device(self, dev_id: str, ip: str) -> tuple[str, bool]:
+    def _check_single_device(self, dev_id: str, ip: str) -> Tuple[str, bool]:
         """Pings a single device and returns its status."""
         is_online = NetworkService.ping_device(ip)
         return dev_id, is_online
@@ -103,6 +103,7 @@ class DeviceMonitor:
                 try:
                     dev_id, is_online = future.result()
                     
+                    # Update counts
                     if is_online:
                         online_count += 1
                     else:
@@ -119,13 +120,14 @@ class DeviceMonitor:
                         if is_online:
                             logger.info(f"Dispositivo {ip} online")
                         else:
-                            # Only log offline if it wasn't already marked offline (ignore initial None transition to Offline to avoid logs bloat at startup unless desired, but user says "Registrar dispositivo online/offline". Let's log it always on status change.)
                             logger.info(f"Dispositivo {ip} offline")
                             
                         # Call UI callback
                         self.on_status_change(dev_id, is_online)
                         
                 except Exception as e:
+                    # Count as offline if there was an error checking
+                    offline_count += 1
                     logger.error(f"Erro ao verificar dispositivo: {str(e)}")
 
         timestamp = datetime.now().strftime("%H:%M:%S")
