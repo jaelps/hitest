@@ -2,7 +2,7 @@ import time
 import threading
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
-from typing import Dict, Callable, Optional
+from typing import Dict, Callable, Optional, Tuple
 from services.logger import logger
 from services.network import NetworkService
 
