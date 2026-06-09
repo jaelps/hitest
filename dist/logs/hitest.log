@@ -4,3 +4,44 @@
 [2026-06-02 00:26:54] Configuracao de dispositivos carregada de config\dispositivos.json
 [2026-06-02 00:35:17] Inicializando o sistema HITEST
 [2026-06-02 00:35:17] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-05 12:36:11] Inicializando o sistema HITEST
+[2026-06-05 12:36:11] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-05 12:36:13] Sistema de monitoramento iniciado
+[2026-06-05 12:36:15] Dispositivo 192.168.50.101 offline
+[2026-06-05 12:36:15] Dispositivo 192.168.50.102 offline
+[2026-06-05 12:36:15] Dispositivo 192.168.50.103 offline
+[2026-06-05 12:36:15] Dispositivo 192.168.50.104 offline
+[2026-06-05 12:36:15] Dispositivo 192.168.50.105 offline
+[2026-06-05 12:36:15] Dispositivo 192.168.50.106 offline
+[2026-06-05 12:37:23] Recarregando configuracao de dispositivos...
+[2026-06-05 12:37:23] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-05 12:37:23] Configuracao de dispositivos recarregada e atualizada com sucesso.
+[2026-06-05 12:47:52] Encerrando a aplicacao...
+[2026-06-05 12:47:52] Parando o monitoramento...
+[2026-06-05 12:47:52] Aplicacao encerrada completamente.
+[2026-06-05 12:48:22] Inicializando o sistema HITEST
+[2026-06-05 12:48:22] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-05 12:48:24] Sistema de monitoramento iniciado
+[2026-06-05 12:48:26] Dispositivo 192.168.50.101 offline
+[2026-06-05 12:48:26] Dispositivo 192.168.50.102 offline
+[2026-06-05 12:48:26] Dispositivo 192.168.50.103 offline
+[2026-06-05 12:48:26] Dispositivo 192.168.50.104 offline
+[2026-06-05 12:48:26] Dispositivo 192.168.50.105 offline
+[2026-06-05 12:48:26] Dispositivo 192.168.50.106 offline
+[2026-06-05 12:49:15] Encerrando a aplicacao...
+[2026-06-05 12:49:15] Parando o monitoramento...
+[2026-06-05 12:49:15] Aplicacao encerrada completamente.
+[2026-06-09 14:30:02] Inicializando o sistema HITEST
+[2026-06-09 14:30:02] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-06-09 14:30:04] Sistema de monitoramento iniciado
+[2026-06-09 14:30:06] Dispositivo 192.168.50.101 offline
+[2026-06-09 14:30:06] Dispositivo 192.168.50.102 offline
+[2026-06-09 14:30:06] Dispositivo 192.168.50.103 offline
+[2026-06-09 14:30:06] Dispositivo 192.168.50.104 offline
+[2026-06-09 14:30:06] Dispositivo 192.168.50.105 offline
+[2026-06-09 14:30:06] Dispositivo 192.168.50.106 offline
+[2026-06-09 14:31:23] Comando enviado para 192.168.50.104 (ID: 765)
+[2026-06-09 14:31:25] Erro de rede ao enviar comando para 192.168.50.104: HTTPConnectionPool(host='192.168.50.104', port=80): Read timed out.
+[2026-06-09 14:32:01] Encerrando a aplicacao...
+[2026-06-09 14:32:01] Parando o monitoramento...
+[2026-06-09 14:32:01] Aplicacao encerrada completamente.

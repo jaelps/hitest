@@ -1,6 +1,7 @@
 import subprocess
 import shutil
-from typing import Tuple
+from typing import Tuple, Dict
+from concurrent.futures import ThreadPoolExecutor
 from services.logger import logger
 
 class NetworkService:
@@ -79,3 +80,31 @@ class NetworkService:
             msg = str(e)
             logger.error(f"Erro ao enviar comando para {ip}: {msg}")
             return False, msg
+
+    @staticmethod
+    def send_command_all(devices: Dict[str, str], timeout: float = 2.0, max_workers: int = 10) -> Dict[str, Tuple[bool, str]]:
+        """
+        Sends commands to all devices in parallel and returns a mapping of device_id -> (success, message).
+
+        Args:
+            devices: Dict of {device_id: ip_address}
+            timeout: Timeout per request in seconds.
+            max_workers: Max parallel workers for sending.
+
+        Returns:
+            Dict[str, Tuple[bool, str]]: Results for each device.
+        """
+        results: Dict[str, Tuple[bool, str]] = {}
+        if not devices:
+            return results
+
+        dev_items = list(devices.items())
+        with ThreadPoolExecutor(max_workers=min(max_workers, len(dev_items))) as executor:
+            futures = [executor.submit(NetworkService.send_command, dev_id, ip, timeout) for dev_id, ip in dev_items]
+            for (dev_id, _), future in zip(dev_items, futures):
+                try:
+                    results[dev_id] = future.result()
+                except Exception as e:
+                    logger.error(f"Erro ao enviar comando para {dev_id}: {str(e)}")
+                    results[dev_id] = (False, str(e))
+        return results

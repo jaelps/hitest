@@ -66,6 +66,7 @@ class HitestMainWindow(ctk.CTk):
         self.header_frame.grid(row=0, column=0, sticky="ew", padx=0, pady=0)
         self.header_frame.grid_columnconfigure(0, weight=1)
         self.header_frame.grid_columnconfigure(1, weight=0)
+        self.header_frame.grid_columnconfigure(2, weight=0)
 
         # Title and Subtitle container
         title_container = ctk.CTkFrame(self.header_frame, fg_color="transparent")
@@ -87,6 +88,21 @@ class HitestMainWindow(ctk.CTk):
         )
         subtitle_lbl.pack(anchor="w")
 
+        # Send All Button
+        self.btn_send_all = ctk.CTkButton(
+            self.header_frame,
+            text="ENVIAR A TODOS",
+            font=styles.FONT_BUTTON,
+            fg_color=styles.BOTAO,
+            hover_color=styles.HOVER,
+            text_color=styles.TEXTO,
+            corner_radius=styles.RADIUS_BUTTON,
+            width=160,
+            height=32,
+            command=self._handle_send_all_click
+        )
+        self.btn_send_all.grid(row=0, column=1, padx=(10, 10), pady=15, sticky="e")
+
         # Refresh Config Button
         self.btn_refresh = ctk.CTkButton(
             self.header_frame,
@@ -100,7 +116,7 @@ class HitestMainWindow(ctk.CTk):
             height=32,
             command=self._handle_refresh_click
         )
-        self.btn_refresh.grid(row=0, column=1, padx=25, pady=15, sticky="e")
+        self.btn_refresh.grid(row=0, column=2, padx=25, pady=15, sticky="e")
 
     def _create_metrics_panel(self):
         """Creates the metric cards panel containing status counters."""
@@ -338,3 +354,51 @@ class HitestMainWindow(ctk.CTk):
             # Briefly flash status or show feedback on button hover colors
             # The prompt requested "Evitar travamentos. Toda comunicação de rede deve ocorrer em threads separadas."
             # Which is fully respected.
+
+    # --- New: Send All functionality ---
+    def _handle_send_all_click(self):
+        """Triggered when the user clicks 'ENVIAR A TODOS'. Disables UI and starts background send."""
+        # Disable send-all button and set all row buttons to busy state
+        try:
+            self.btn_send_all.configure(state="disabled", text="ENVIANDO...")
+        except Exception:
+            pass
+
+        for row in self.device_rows.values():
+            try:
+                row.set_button_busy(True)
+            except Exception:
+                pass
+
+        thread = threading.Thread(target=self._run_send_all_thread, name="SendAllThread")
+        thread.daemon = True
+        thread.start()
+
+    def _run_send_all_thread(self):
+        """Executes sending commands to all devices in parallel (background thread)."""
+        # Capture snapshot of devices to avoid races
+        devices_snapshot = dict(self.devices)
+        results = NetworkService.send_command_all(devices_snapshot)
+
+        # Log results (these will also appear in GUI via logger handler)
+        for dev_id, (ok, msg) in results.items():
+            if ok:
+                logger.info(f"ENVIADO {dev_id}: {msg}")
+            else:
+                logger.error(f"FALHA {dev_id}: {msg}")
+
+        # Return to UI thread to re-enable buttons and optionally update UI
+        self.after(0, self._safe_on_send_all_complete, results)
+
+    def _safe_on_send_all_complete(self, results):
+        """Re-enables UI elements after send-all completes."""
+        try:
+            self.btn_send_all.configure(state="normal", text="ENVIAR A TODOS")
+        except Exception:
+            pass
+
+        for row in self.device_rows.values():
+            try:
+                row.set_button_busy(False)
+            except Exception:
+                pass

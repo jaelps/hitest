@@ -21,7 +21,10 @@ class HitestApp:
         
         # Load configuration
         self.devices = self.load_config()
-        
+
+        # Verify loaded devices against default list and log any differences
+        self._verify_devices()
+
         # Set customtkinter default appearance
         ctk.set_appearance_mode("Dark")
         ctk.set_default_color_theme("blue")
@@ -80,6 +83,39 @@ class HitestApp:
         except Exception as e:
             logger.error(f"Erro ao ler arquivo de configuracao: {str(e)}. Usando valores padrao.")
             return default_devices
+
+    def _verify_devices(self):
+        """Compares the loaded devices with the default_devices list and logs any discrepancies."""
+        # Expected default devices (same as used when creating default file)
+        expected = {
+            "432": "192.168.50.101",
+            "543": "192.168.50.102",
+            "654": "192.168.50.103",
+            "765": "192.168.50.104",
+            "876": "192.168.50.105",
+            "987": "192.168.50.106",
+            "321": "192.168.50.100",
+            "310": "192.168.50.107"
+        }
+
+        loaded = self.devices or {}
+
+        missing = [k for k in expected.keys() if k not in loaded]
+        extra = [k for k in loaded.keys() if k not in expected]
+        mismatched = [k for k in expected.keys() if k in loaded and str(loaded[k]) != str(expected[k])]
+
+        if not missing and not extra and not mismatched:
+            logger.info("Verificacao de dispositivos: OK — todos os dispositivos padrao presentes e com IPs corretos.")
+            return
+
+        logger.warning("Verificacao de dispositivos encontrou discrepancias:")
+        if missing:
+            logger.warning(f"  Dispositivos faltando em config: {missing}")
+        if extra:
+            logger.warning(f"  Dispositivos extras em config: {extra}")
+        if mismatched:
+            for k in mismatched:
+                logger.warning(f"  Dispositivo {k} IP esperado: {expected[k]}  IP carregado: {loaded.get(k) }")
 
     def refresh_configuration(self):
         """Reloads config from disk and updates monitor and UI dynamically."""
