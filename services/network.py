@@ -1,81 +1,104 @@
-import subprocess
-import shutil
-from typing import Tuple
+import json
+import socket
+from typing import Any, Dict, Optional, Tuple
+from urllib import error, request
+
 from services.logger import logger
 
+
 class NetworkService:
-    """Handles HTTP communication with ESP8266 devices."""
-    
+    """Handles lightweight HTTP communication with ESP8266 devices."""
+
+    @staticmethod
+    def _request(url: str, timeout: float = 2.0) -> Tuple[bool, Optional[Dict[str, Any]], str]:
+        """Performs a GET request and returns a normalized success payload."""
+        try:
+            with request.urlopen(url, timeout=timeout) as response:
+                body = response.read().decode("utf-8", errors="replace")
+                status = getattr(response, "status", 200)
+                if status >= 400:
+                    return False, None, f"HTTP {status}"
+                return True, {"status": status, "body": body}, body
+        except error.HTTPError as exc:
+            body = exc.read().decode("utf-8", errors="replace")
+            return False, None, f"HTTP {exc.code}: {body or exc.reason}"
+        except error.URLError as exc:
+            reason = getattr(exc, "reason", str(exc))
+            return False, None, f"Erro de rede: {reason}"
+        except (socket.timeout, TimeoutError) as exc:
+            return False, None, f"Tempo limite excedido: {exc}"
+        except (socket.error, OSError) as exc:
+            return False, None, f"Erro de conexão: {exc}"
+        except Exception as exc:
+            return False, None, f"Erro inesperado: {exc}"
+
+    @staticmethod
+    def probe_connectivity(ip: str, timeout: float = 2.0) -> bool:
+        """Verifies a device is reachable via HTTP GET /."""
+        url = f"http://{ip}/"
+        success, _, detail = NetworkService._request(url, timeout=timeout)
+        if not success:
+            logger.warning(f"Falha na verificacao inicial de {ip}: {detail}")
+        return success
+
     @staticmethod
     def ping_device(ip: str, timeout: float = 2.0) -> bool:
-        """
-        Checks if the ESP8266 is online.
-        
-        Args:
-            ip: IP address of the device.
-            timeout: Timeout in seconds for the request.
-            
-        Returns:
-            bool: True if the device responds successfully, False otherwise.
-        """
-        url = f"http://{ip}/lb"
+        """Backward-compatible alias for initial HTTP connectivity checks."""
+        return NetworkService.probe_connectivity(ip, timeout=timeout)
+
+    @staticmethod
+    def check_heartbeat(ip: str, timeout: float = 2.0) -> Dict[str, Any]:
+        """Requests the device heartbeat endpoint and returns normalized metadata."""
+        url = f"http://{ip}/heartbeat"
+        success, payload, detail = NetworkService._request(url, timeout=timeout)
+
+        if not success:
+            logger.warning(f"Heartbeat timeout/erro para {ip}: {detail}")
+            return {
+                "success": False,
+                "error": detail,
+                "device_id": "",
+                "firmware_version": "",
+                "uptime": 0,
+                "status": "offline",
+            }
+
         try:
-            # Check if curl is available
-            if shutil.which('curl') is None:
-                logger.warning("curl não encontrado no PATH. Usando fallback.")
-                return False
-            
-            # Using curl command to send test request
-            cmd = f'curl -s -m {int(timeout)} "{url}"'
-            result = subprocess.run(cmd, shell=True, capture_output=True, timeout=timeout+1)
-            # A successful exit code (0) means it is online
-            return result.returncode == 0
-        except subprocess.TimeoutExpired:
-            return False
-        except Exception as e:
-            logger.error(f"Erro ao verificar dispositivo {ip}: {str(e)}")
-            return False
+            body = payload.get("body", "") if payload else ""
+            parsed = json.loads(body) if body else {}
+            if not isinstance(parsed, dict):
+                raise ValueError("Resposta do heartbeat não é um objeto JSON válido")
+
+            logger.info(f"Heartbeat recebido de {ip}: {parsed}")
+            return {
+                "success": True,
+                "error": "",
+                "device_id": str(parsed.get("device", "")),
+                "firmware_version": str(parsed.get("version", "")),
+                "uptime": int(parsed.get("uptime", 0)),
+                "status": str(parsed.get("status", "ok")),
+            }
+        except (TypeError, ValueError, json.JSONDecodeError) as exc:
+            logger.warning(f"JSON inválido recebido de {ip}: {exc}")
+            return {
+                "success": False,
+                "error": f"JSON inválido: {exc}",
+                "device_id": "",
+                "firmware_version": "",
+                "uptime": 0,
+                "status": "offline",
+            }
 
     @staticmethod
     def send_command(device_id: str, ip: str, timeout: float = 2.0) -> Tuple[bool, str]:
-        """
-        Sends the control command (curl to /lb) to the device.
-        
-        Args:
-            device_id: ID of the device.
-            ip: IP address of the device.
-            timeout: Timeout in seconds.
-            
-        Returns:
-            Tuple[bool, str]: (Success status, details/error message).
-        """
+        """Sends a command by calling the device's /lb endpoint."""
         url = f"http://{ip}/lb"
         logger.info(f"Comando enviado para {ip} (ID: {device_id})")
-        try:
-            # Check if curl is available
-            if shutil.which('curl') is None:
-                msg = "curl não encontrado no sistema"
-                logger.error(f"Erro ao enviar comando para {ip}: {msg}")
-                return False, msg
-            
-            cmd = f'curl -s -m {int(timeout)} "{url}"'
-            result = subprocess.run(cmd, shell=True, capture_output=True, timeout=timeout+1, text=True)
-            if result.returncode == 0:
-                msg = f"Sucesso: {result.stdout.strip()}"
-                return True, msg
-            else:
-                try:
-                    error_msg = result.stderr.strip()
-                except (UnicodeDecodeError, AttributeError):
-                    error_msg = "Erro ao decodificar resposta"
-                msg = f"Erro: {error_msg}"
-                logger.error(f"Erro ao enviar comando para {ip}: {msg}")
-                return False, msg
-        except subprocess.TimeoutExpired as e:
-            msg = f"Timeout: {str(e)}"
-            logger.error(f"Erro de rede ao enviar comando para {ip}: {msg}")
-            return False, msg
-        except Exception as e:
-            msg = str(e)
-            logger.error(f"Erro ao enviar comando para {ip}: {msg}")
-            return False, msg
+
+        success, _, detail = NetworkService._request(url, timeout=timeout)
+        if success:
+            logger.info(f"Comando executado com sucesso em {ip}")
+            return True, "Comando executado com sucesso"
+
+        logger.error(f"Erro ao enviar comando para {ip}: {detail}")
+        return False, detail

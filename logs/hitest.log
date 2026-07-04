@@ -190,3 +190,439 @@
 [2026-06-05 00:07:06] Dispositivo 192.168.50.106 offline
 [2026-06-05 00:07:06] Dispositivo 192.168.50.100 offline
 [2026-06-05 00:07:06] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:23:40] Inicializando o sistema HITEST
+[2026-07-04 08:23:40] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-07-04 08:23:41] Sistema de monitoramento HTTP iniciado
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:23:44] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:23:44] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:23:44] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:23:44] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:23:44] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:23:44] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:23:44] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:23:44] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:23:44] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:24:01] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:24:01] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:24:01] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:24:01] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:24:01] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:24:01] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:24:01] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:24:01] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:24:01] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:24:15] Encerrando a aplicacao...
+[2026-07-04 08:24:15] Parando o monitoramento HTTP...
+[2026-07-04 08:24:15] Aplicacao encerrada completamente.
+[2026-07-04 08:24:54] Inicializando o sistema HITEST
+[2026-07-04 08:24:54] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-07-04 08:24:56] Sistema de monitoramento HTTP iniciado
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:24:58] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:24:58] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:24:58] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:24:58] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:24:58] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:24:58] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:24:58] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:24:58] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:24:58] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:25:09] Encerrando a aplicacao...
+[2026-07-04 08:25:09] Parando o monitoramento HTTP...
+[2026-07-04 08:25:09] Aplicacao encerrada completamente.
+[2026-07-04 08:25:59] Inicializando o sistema HITEST
+[2026-07-04 08:25:59] Configuracao de dispositivos carregada de config\dispositivos.json
+[2026-07-04 08:26:00] Sistema de monitoramento HTTP iniciado
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:26:02] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:26:02] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:26:02] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:26:02] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:26:03] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:26:03] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:26:03] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:26:03] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:26:03] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:26:20] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:26:20] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:26:20] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:26:20] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:26:20] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:26:20] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:26:20] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:26:20] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:26:20] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:26:37] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:26:37] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:26:37] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:26:37] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:26:37] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:26:37] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:26:37] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:26:37] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:26:37] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:26:54] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:26:54] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:26:54] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:26:54] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:26:54] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:26:54] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:26:54] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:26:54] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:26:54] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:26:59] Encerrando a aplicacao...
+[2026-07-04 08:26:59] Parando o monitoramento HTTP...
+[2026-07-04 08:26:59] Aplicacao encerrada completamente.
+[2026-07-04 08:36:53] Heartbeat recebido de 192.168.0.10: {'status': 'ok', 'uptime': 123, 'version': '1.2.3', 'device': '432'}
+[2026-07-04 08:36:53] Comando enviado para 192.168.0.10 (ID: 432)
+[2026-07-04 08:36:53] Erro ao enviar comando para 192.168.0.10: Unexpected error: boom
+[2026-07-04 08:40:34] Heartbeat recebido de 192.168.0.10: {'status': 'ok', 'uptime': 123, 'version': '1.2.3', 'device': '432'}
+[2026-07-04 08:40:34] Comando enviado para 192.168.0.10 (ID: 432)
+[2026-07-04 08:40:34] Erro ao enviar comando para 192.168.0.10: Unexpected error: boom
+[2026-07-04 08:40:55] Heartbeat recebido de 192.168.0.10: {'status': 'ok', 'uptime': 123, 'version': '1.2.3', 'device': '432'}
+[2026-07-04 08:40:55] Comando enviado para 192.168.0.10 (ID: 432)
+[2026-07-04 08:40:55] Erro ao enviar comando para 192.168.0.10: Unexpected error: boom
+[2026-07-04 08:42:10] Inicializando o sistema HITEST
+[2026-07-04 08:42:12] Sistema de monitoramento HTTP iniciado
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:42:14] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:42:14] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:42:14] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:42:14] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:42:14] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:42:14] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:42:14] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:42:14] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:42:14] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:42:31] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:42:31] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:42:31] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:42:31] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:42:31] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:42:31] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:42:31] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:42:31] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:42:31] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:42:45] Recarregando configuracao de dispositivos...
+[2026-07-04 08:42:45] Configuracao de dispositivos recarregada e atualizada com sucesso.
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:42:47] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:42:47] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:42:47] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:42:47] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:42:47] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:42:47] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:42:47] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:42:47] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:42:47] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:42:48] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:42:48] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:42:48] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:42:49] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:42:49] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:42:49] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:42:49] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:42:49] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:42:49] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:43:06] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:43:06] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:43:06] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:43:06] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:43:06] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:43:06] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:43:06] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:43:06] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:43:06] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:43:23] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:43:23] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:43:23] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:43:23] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:43:23] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:43:23] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:43:23] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:43:23] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:43:23] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:43:39] Encerrando a aplicacao...
+[2026-07-04 08:43:39] Parando o monitoramento HTTP...
+[2026-07-04 08:43:39] Aplicacao encerrada completamente.
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:43:40] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:44:08] Inicializando o sistema HITEST
+[2026-07-04 08:44:09] Sistema de monitoramento HTTP iniciado
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:44:12] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:44:12] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:44:12] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:44:12] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:44:12] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:44:12] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:44:12] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:44:12] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:44:12] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:44:27] Encerrando a aplicacao...
+[2026-07-04 08:44:27] Parando o monitoramento HTTP...
+[2026-07-04 08:44:27] Aplicacao encerrada completamente.
+[2026-07-04 08:49:25] Inicializando o sistema HITEST
+[2026-07-04 08:49:27] Sistema de monitoramento HTTP iniciado
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.104: Network error: timed out
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.103: Network error: timed out
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.105: Network error: timed out
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.106: Network error: timed out
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.107: Network error: timed out
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.100: Network error: timed out
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.101: Network error: timed out
+[2026-07-04 08:49:30] Heartbeat timeout/erro para 192.168.50.102: Network error: timed out
+[2026-07-04 08:49:30] Dispositivo 192.168.50.101 offline
+[2026-07-04 08:49:30] Dispositivo 192.168.50.102 offline
+[2026-07-04 08:49:30] Dispositivo 192.168.50.103 offline
+[2026-07-04 08:49:30] Dispositivo 192.168.50.104 offline
+[2026-07-04 08:49:30] Dispositivo 192.168.50.105 offline
+[2026-07-04 08:49:30] Dispositivo 192.168.50.106 offline
+[2026-07-04 08:49:30] Dispositivo 192.168.50.100 offline
+[2026-07-04 08:49:30] Dispositivo 192.168.50.107 offline
+[2026-07-04 08:49:32] Encerrando a aplicacao...
+[2026-07-04 08:49:32] Parando o monitoramento HTTP...
+[2026-07-04 08:49:32] Aplicacao encerrada completamente.
+[04/07/2026 08:53:32] Heartbeat recebido de 192.168.0.10: {'status': 'ok', 'uptime': 123, 'version': '1.2.3', 'device': '432'}
+[04/07/2026 08:53:32] Comando enviado para 192.168.0.10 (ID: 432)
+[04/07/2026 08:53:32] Erro ao enviar comando para 192.168.0.10: Erro inesperado: boom
+[04/07/2026 08:54:07] Inicializando o sistema HITEST
+[04/07/2026 08:54:09] Sistema de monitoramento HTTP iniciado
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 08:54:12] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 08:54:12] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 08:54:12] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 08:54:12] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 08:54:12] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 08:54:12] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 08:54:12] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 08:54:12] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 08:54:12] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 08:54:29] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 08:54:29] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 08:54:29] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 08:54:29] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 08:54:29] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 08:54:29] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 08:54:29] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 08:54:29] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 08:54:29] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 08:54:46] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 08:54:46] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 08:54:46] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 08:54:46] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 08:54:46] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 08:54:46] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 08:54:46] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 08:54:46] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 08:54:46] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 08:54:57] Encerrando a aplicacao...
+[04/07/2026 08:54:57] Parando o monitoramento HTTP...
+[04/07/2026 08:54:57] Aplicacao encerrada completamente.
+[04/07/2026 09:01:43] Heartbeat recebido de 192.168.0.10: {'status': 'ok', 'uptime': 123, 'version': '1.2.3', 'device': '432'}
+[04/07/2026 09:01:43] Comando enviado para 192.168.0.10 (ID: 432)
+[04/07/2026 09:01:43] Erro ao enviar comando para 192.168.0.10: Erro inesperado: boom
+[04/07/2026 09:02:27] Inicializando o sistema HITEST
+[04/07/2026 09:02:29] Sistema de monitoramento HTTP iniciado
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 09:02:32] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 09:02:32] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 09:02:32] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 09:02:32] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 09:02:32] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 09:02:32] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 09:02:32] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 09:02:32] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 09:02:32] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 09:02:49] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 09:02:49] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 09:02:49] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 09:02:49] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 09:02:49] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 09:02:49] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 09:02:49] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 09:02:49] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 09:02:49] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 09:03:06] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 09:03:06] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 09:03:06] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 09:03:06] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 09:03:06] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 09:03:06] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 09:03:06] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 09:03:06] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 09:03:06] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 09:03:23] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 09:03:23] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 09:03:23] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 09:03:23] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 09:03:23] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 09:03:23] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 09:03:23] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 09:03:23] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 09:03:23] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.100: Erro de rede: timed out
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.101: Erro de rede: timed out
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.104: Erro de rede: timed out
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.106: Erro de rede: timed out
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.102: Erro de rede: timed out
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.103: Erro de rede: timed out
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.105: Erro de rede: timed out
+[04/07/2026 09:03:40] Heartbeat timeout/erro para 192.168.50.107: Erro de rede: timed out
+[04/07/2026 09:03:40] Dispositivo 192.168.50.101 desconectado
+[04/07/2026 09:03:40] Dispositivo 192.168.50.102 desconectado
+[04/07/2026 09:03:40] Dispositivo 192.168.50.103 desconectado
+[04/07/2026 09:03:40] Dispositivo 192.168.50.104 desconectado
+[04/07/2026 09:03:40] Dispositivo 192.168.50.105 desconectado
+[04/07/2026 09:03:40] Dispositivo 192.168.50.106 desconectado
+[04/07/2026 09:03:40] Dispositivo 192.168.50.100 desconectado
+[04/07/2026 09:03:40] Dispositivo 192.168.50.107 desconectado
+[04/07/2026 09:03:44] Encerrando a aplicacao...
+[04/07/2026 09:03:44] Parando o monitoramento HTTP...
+[04/07/2026 09:03:44] Aplicacao encerrada completamente.

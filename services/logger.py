@@ -4,9 +4,9 @@ from pathlib import Path
 from datetime import datetime
 
 class CustomFormatter(logging.Formatter):
-    """Format logs as [YYYY-MM-DD HH:MM:SS] Message"""
+    """Format logs as [DD/MM/YYYY HH:MM:SS] Message"""
     def format(self, record):
-        timestamp = datetime.fromtimestamp(record.created).strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.fromtimestamp(record.created).strftime('%d/%m/%Y %H:%M:%S')
         return f"[{timestamp}] {record.getMessage()}"
 
 def setup_logger() -> logging.Logger:
